@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="fa" dir="rtl" data-era="1"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ساتو تیم — یک ذهنیت، چند زبان طراحی</title>
+<meta name="description" content="تیم طراحی و توسعه وب. یک صفحه، پنج زبان طراحی — مینیمالیسم، بروتالیسم، اسکیومورفیسم، گلس‌مورفیسم و رتروویو.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="icons/icon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preload" href="fonts/vazirmatn-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/vazirmatn-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/app.js"></script>
+</head>
+<body>
+<header class="identity">
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;width:100%">
+    <a class="brand" href="#hero" aria-label="ST — صفحه اصلی">
+      <!-- Five ST drawings, one per era. Each era session draws its own; the slot and the 44x44 box stay fixed. -->
+      <svg class="logo" data-for="1" viewBox="0 0 40 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter"><path d="M15 12H6v8h9v8H6"></path><path d="M19 12h14M26 12v16"></path></g></svg>
+      <span class="logo" data-for="2" aria-hidden="true"><span class="logo-s">S</span><span class="logo-t">T</span></span>
+      <svg class="logo" data-for="3" viewBox="0 0 40 40" aria-hidden="true">
+        <defs>
+          <linearGradient id="sk-logo-rim" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#e4c58f"></stop>
+            <stop offset=".28" stop-color="#c49a5d"></stop>
+            <stop offset=".62" stop-color="#9a6d3a"></stop>
+            <stop offset="1" stop-color="#6d4a26"></stop>
+          </linearGradient>
+          <radialGradient id="sk-logo-enamel" cx=".32" cy=".22" r=".9">
+            <stop offset="0" stop-color="#4b3929"></stop>
+            <stop offset=".55" stop-color="#31251b"></stop>
+            <stop offset="1" stop-color="#1e1711"></stop>
+          </radialGradient>
+          <linearGradient id="sk-logo-ivory" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#fff7e6"></stop>
+            <stop offset=".55" stop-color="#f2e2c4"></stop>
+            <stop offset="1" stop-color="#d8bb90"></stop>
+          </linearGradient>
+          <linearGradient id="sk-logo-edge" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#f8e7c6" stop-opacity=".55"></stop>
+            <stop offset=".45" stop-color="#c9a36d" stop-opacity=".15"></stop>
+            <stop offset="1" stop-color="#0f0a06" stop-opacity=".65"></stop>
+          </linearGradient>
+        </defs>
+        <rect x="2" y="2" width="36" height="36" rx="9" fill="url(#sk-logo-rim)" stroke="#5b3f24" stroke-width=".5"></rect>
+        <rect x="4" y="4" width="32" height="32" rx="7.2" fill="url(#sk-logo-enamel)" stroke="url(#sk-logo-edge)" stroke-width=".8"></rect>
+        <path d="M11 3.3H29" fill="none" stroke="#f6e2b8" stroke-width=".8" stroke-linecap="round" opacity=".7"></path>
+        <g transform="translate(20 20) scale(.85) translate(-20 -20)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <g transform="translate(.5 0)">
+            <g stroke="#1a120c" stroke-width="3.6" opacity=".8" transform="translate(0 1)">
+              <path d="M15 12H6v8h9v8H6"></path>
+              <path d="M19 12h14M26 12v16"></path>
+            </g>
+            <g stroke="url(#sk-logo-ivory)" stroke-width="3.6">
+              <path d="M15 12H6v8h9v8H6"></path>
+              <path d="M19 12h14M26 12v16"></path>
+            </g>
+          </g>
+        </g>
+      </svg>
+      <svg class="logo" data-for="4" viewBox="0 0 40 40" aria-hidden="true">
+        <defs>
+          <linearGradient id="gl-logo-plate" x1="5" y1="4" x2="36" y2="37" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#ffffff" stop-opacity=".66"></stop>
+            <stop offset=".55" stop-color="#ffffff" stop-opacity=".32"></stop>
+            <stop offset="1" stop-color="#dff1fa" stop-opacity=".18"></stop>
+          </linearGradient>
+          <linearGradient id="gl-logo-rim" x1="4" y1="4" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#ffffff" stop-opacity=".95"></stop>
+            <stop offset=".5" stop-color="#ffffff" stop-opacity=".6"></stop>
+            <stop offset="1" stop-color="#3f7fa6" stop-opacity=".65"></stop>
+          </linearGradient>
+          <linearGradient id="gl-logo-spec" x1="8" y1="4" x2="26" y2="22" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#ffffff" stop-opacity=".55"></stop>
+            <stop offset="1" stop-color="#ffffff" stop-opacity="0"></stop>
+          </linearGradient>
+          <clipPath id="gl-logo-pane"><rect x="2.5" y="2.5" width="35" height="35" rx="10"></rect></clipPath>
+        </defs>
+        <rect x="2.5" y="2.5" width="35" height="35" rx="10" fill="url(#gl-logo-plate)" stroke="url(#gl-logo-rim)" stroke-width="1.25"></rect>
+        <rect x="3.35" y="3.35" width="33.3" height="33.3" rx="9.2" fill="none" stroke="#17324a" stroke-opacity=".13" stroke-width=".5"></rect>
+        <g clip-path="url(#gl-logo-pane)">
+          <path d="M5 21 L20 4 L25 4 L10 21 Z" fill="url(#gl-logo-spec)"></path>
+          <path d="M6.5 12.5 L14 4" stroke="#ffffff" stroke-opacity=".5" stroke-width=".9" stroke-linecap="round"></path>
+        </g>
+        <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <g stroke="#ffffff" stroke-opacity=".7" stroke-width="2.5" transform="translate(.9 .9)">
+            <path d="M15 12H6v8h9v8H6"></path>
+            <path d="M19 12h14M26 12v16"></path>
+          </g>
+          <g stroke="currentColor" stroke-width="2.5">
+            <path d="M15 12H6v8h9v8H6"></path>
+            <path d="M19 12h14M26 12v16"></path>
+          </g>
+        </g>
+      </svg>
+      <svg class="logo" data-for="5" viewBox="0 0 40 40" aria-hidden="true">
+        <defs>
+          <linearGradient id="logoChrome" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#72e8ff"></stop>
+            <stop offset=".38" stop-color="#f2ecff"></stop>
+            <stop offset=".68" stop-color="#ff3ea5"></stop>
+            <stop offset="1" stop-color="#ff7ad9"></stop>
+          </linearGradient>
+          <linearGradient id="logoPlate" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#0f0f22"></stop>
+            <stop offset="1" stop-color="#1a1030"></stop>
+          </linearGradient>
+          <pattern id="logoScan" width="40" height="3" patternUnits="userSpaceOnUse">
+            <rect width="40" height="1" y="2" fill="#72e8ff" opacity=".055"></rect>
+          </pattern>
+          <filter id="logoPlateGlow" x="-10%" y="-10%" width="120%" height="120%">
+            <feDropShadow dx="0" dy="0" stdDeviation="1" flood-color="#ff3ea5" flood-opacity=".3"></feDropShadow>
+          </filter>
+          <filter id="logoGlow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="0" stdDeviation="1.2" flood-color="#ff3ea5" flood-opacity=".55"></feDropShadow>
+          </filter>
+        </defs>
+        <rect x="2" y="2" width="36" height="36" rx="4" fill="url(#logoPlate)" stroke="url(#logoChrome)" stroke-width="2" filter="url(#logoPlateGlow)"></rect>
+        <rect x="3" y="3" width="34" height="34" rx="3" fill="url(#logoScan)"></rect>
+        <g fill="none" stroke="url(#logoChrome)" stroke-width="3.2" stroke-linecap="square" stroke-linejoin="miter" filter="url(#logoGlow)">
+          <path d="M15 12H6v8h9v8H6"></path>
+          <path d="M19 12h14M26 12v16"></path>
+        </g>
+      </svg>
+    </a>
+    <a class="link" href="https://t.me/satoteam">تماس</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="hero">
+    <div class="wrap">
+      <div class="rail" role="radiogroup" aria-label="انتخاب دوره">
+        <button role="radio" aria-checked="true" data-set="1" aria-label="دوره ۰۱ — مینیمال (مینیمالیسم)">مینیمال</button>
+        <button role="radio" aria-checked="false" data-set="2" aria-label="دوره ۰۲ — جسور (بروتالیسم)">جسور</button>
+        <button role="radio" aria-checked="false" data-set="3" aria-label="دوره ۰۳ — گرم (اسکیومورفیسم)">گرم</button>
+        <button role="radio" aria-checked="false" data-set="4" aria-label="دوره ۰۴ — لوکس (گلس‌مورفیسم)">لوکس</button>
+        <button role="radio" aria-checked="false" data-set="5" aria-label="دوره ۰۵ — رترو (رتروویو)">رترو</button>
+      </div>
+      <div class="hero-copy">
+        <h1>یک <span class="h1-primary h1-brass">ذهنیت</span>، چند زبان <span class="h1-accent h1-copper">طراحی</span></h1>
+        <p class="hero-lede" data-for="1" data-placeholder="true">هر پروژه زبان اختصاصی خودش را دارد؛ زبانش را بر اساس نیاز شما طراحی می‌کنیم.</p>
+        <p class="hero-lede" data-for="2" data-placeholder="true">هر پروژه زبان اختصاصی خودش را دارد؛ زبانش را بر اساس نیاز شما طراحی می‌کنیم.</p>
+        <p class="hero-lede" data-for="3" data-placeholder="true">هر پروژه زبان اختصاصی خودش را دارد؛ زبانش را بر اساس نیاز شما طراحی می‌کنیم.</p>
+        <p class="hero-lede" data-for="4" data-placeholder="true">هر پروژه زبان اختصاصی خودش را دارد؛ زبانش را بر اساس نیاز شما طراحی می‌کنیم.</p>
+        <p class="hero-lede" data-for="5" data-placeholder="true">هر پروژه زبان اختصاصی خودش را دارد؛ زبانش را بر اساس نیاز شما طراحی می‌کنیم.</p>
+      </div>
+      <div class="era-stage">
+        <div class="exhibit ex-min" data-for="1" aria-hidden="true">
+          <i class="min-rule r-top"></i><i class="min-rule r-side"></i><i class="min-rule r-bottom"></i>
+          <span class="min-disc"></span><span class="min-block"></span>
+          <svg class="min-mark" viewBox="0 0 40 40"><path d="M15 12H6v8h9v8H6"></path><path d="M19 12h14M26 12v16"></path></svg>
+        </div>
+        <div class="exhibit ex-bru" data-for="2" aria-hidden="true">
+          <span class="bru-back"></span>
+          <div class="bru-main"><svg viewBox="0 0 40 40"><path d="M15 12H6v8h9v8H6"></path><path d="M19 12h14M26 12v16"></path></svg></div>
+          <div class="bru-strip"><i></i><i></i><i></i></div><span class="bru-dot"></span>
+        </div>
+        <div class="exhibit ex-skeu" data-for="3">
+          <div class="sk-device" role="group" aria-label="دستگاه نمایش دوره گرم">
+            <input class="sk-power sr-only" type="checkbox" id="sk-power" checked="" aria-label="روشن و خاموش کردن دستگاه">
+            <div class="sk-screen" role="img" aria-label="نمایشگر دستگاه با نشان ST">
+              <span class="sk-bloom" aria-hidden="true"></span>
+              <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M15 12H6v8h9v8H6"></path><path d="M19 12h14M26 12v16"></path></svg>
+              <span class="sk-scan" aria-hidden="true"></span>
+              <span class="sk-screen-off" aria-hidden="true"></span>
+            </div>
+            <span class="sk-led-spill" aria-hidden="true"></span>
+            <span class="sk-led" aria-hidden="true"><i class="sk-led-core"></i></span>
+            <span class="sk-knob k-one" aria-hidden="true">
+              <svg class="sk-knob-ticks" viewBox="0 0 100 100" aria-hidden="true">
+                <g fill="none" stroke="rgba(255,252,244,.55)" stroke-width="1.8" stroke-linecap="round" transform="translate(0 1)">
+                  <path d="M50 12V7M69 17.1L71.5 12.8M82.9 31L87.2 28.5M88 50H93M82.9 69L87.2 71.5M69 82.9L71.5 87.2M50 88V93M31 82.9L28.5 87.2M17.1 69L12.8 71.5M12 50H7M17.1 31L12.8 28.5M31 17.1L28.5 12.8"></path>
+                  <path d="M50 14V5M86 50H95M50 86V95M14 50H5" stroke-width="2.2"></path>
+                </g>
+                <g fill="none" stroke="rgba(58,40,24,.55)" stroke-width="1.8" stroke-linecap="round">
+                  <path d="M50 12V7M69 17.1L71.5 12.8M82.9 31L87.2 28.5M88 50H93M82.9 69L87.2 71.5M69 82.9L71.5 87.2M50 88V93M31 82.9L28.5 87.2M17.1 69L12.8 71.5M12 50H7M17.1 31L12.8 28.5M31 17.1L28.5 12.8"></path>
+                  <path d="M50 14V5M86 50H95M50 86V95M14 50H5" stroke-width="2.2"></path>
+                </g>
+                <g fill="none" stroke="rgba(255,250,240,.75)" stroke-width="2.2" stroke-linecap="round">
+                  <path d="M50 15V6"></path>
+                </g>
+              </svg>
+            </span>
+            <span class="sk-knob k-two" aria-hidden="true">
+              <svg class="sk-knob-ticks" viewBox="0 0 100 100" aria-hidden="true">
+                <g fill="none" stroke="rgba(255,252,244,.55)" stroke-width="1.8" stroke-linecap="round" transform="translate(0 1)">
+                  <path d="M50 12V7M69 17.1L71.5 12.8M82.9 31L87.2 28.5M88 50H93M82.9 69L87.2 71.5M69 82.9L71.5 87.2M50 88V93M31 82.9L28.5 87.2M17.1 69L12.8 71.5M12 50H7M17.1 31L12.8 28.5M31 17.1L28.5 12.8"></path>
+                  <path d="M50 14V5M86 50H95M50 86V95M14 50H5" stroke-width="2.2"></path>
+                </g>
+                <g fill="none" stroke="rgba(58,40,24,.55)" stroke-width="1.8" stroke-linecap="round">
+                  <path d="M50 12V7M69 17.1L71.5 12.8M82.9 31L87.2 28.5M88 50H93M82.9 69L87.2 71.5M69 82.9L71.5 87.2M50 88V93M31 82.9L28.5 87.2M17.1 69L12.8 71.5M12 50H7M17.1 31L12.8 28.5M31 17.1L28.5 12.8"></path>
+                  <path d="M50 14V5M86 50H95M50 86V95M14 50H5" stroke-width="2.2"></path>
+                </g>
+                <g fill="none" stroke="rgba(255,250,240,.75)" stroke-width="2.2" stroke-linecap="round">
+                  <path d="M50 15V6"></path>
+                </g>
+              </svg>
+            </span>
+            <label class="sk-toggle" for="sk-power"><span class="sk-toggle-hit" aria-hidden="true"></span></label>
+            <i class="sk-screw s-tl" aria-hidden="true"></i><i class="sk-screw s-tr" aria-hidden="true"></i><i class="sk-screw s-bl" aria-hidden="true"></i><i class="sk-screw s-br" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="exhibit ex-glass" data-for="4" aria-hidden="true">
+          <span class="gl-light l1"></span><span class="gl-light l2"></span><span class="gl-light l3"></span>
+          <div class="gl-card gl-back"></div>
+          <div class="gl-card gl-mid"><span class="gl-ghost"></span></div>
+          <div class="gl-card gl-front">
+            <span class="gl-sheen"></span>
+            <div class="gl-head"><span class="gl-dot"></span><span class="gl-bar"></span><span class="gl-ring"></span></div>
+            <svg class="gl-mark" viewBox="0 0 40 40"><path d="M15 12H6v8h9v8H6"></path><path d="M19 12h14M26 12v16"></path></svg>
+            <div class="gl-rows"><i></i><i></i><i></i></div>
+            <div class="gl-bars"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <span class="gl-pill"></span>
+          </div>
+        </div>
+        <div class="exhibit ex-retro" data-for="5" aria-hidden="true">
+          <span class="retro-sun"></span><span class="retro-grid"></span>
+          <svg class="retro-mark" viewBox="0 0 40 40">
+            <defs><linearGradient id="retroChrome" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#72e8ff"></stop><stop offset=".45" stop-color="#f2ecff"></stop><stop offset=".55" stop-color="#ff3ea5"></stop><stop offset="1" stop-color="#8b5cff"></stop></linearGradient></defs>
+            <path d="M15 12H6v8h9v8H6"></path><path d="M19 12h14M26 12v16"></path>
+          </svg>
+          <span class="retro-scan"></span>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <p class="cta-line">ایده‌ای دارید که به طراحی اختصاصی نیاز دارد؟</p>
+        <a class="cta" href="https://t.me/satoteam">با ما تماس بگیرید</a>
+        <p class="rail-hint">کل صفحه با هر دوره عوض می‌شود — یکی از پنج دوره را انتخاب کنید</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="manifesto" id="manifesto" aria-labelledby="m-label">
+    <h2 class="sr-only" id="m-label">فلسفه دوره انتخاب‌شده</h2>
+    <div class="wrap">
+      <div class="era-block" data-for="1">
+        <div class="m-head">
+          <p class="m-kicker">حالت مینیمال (مینیمالیسم)</p>
+          <h3 class="m-thesis">کمترین چیز، بیشترین وضوح.</h3>
+        </div>
+        <div class="m-cards">
+          <div class="m-card">
+            <div class="m-label"><span>ماده</span><span class="m-num">۰۱</span></div>
+            <div class="m-demo"><span class="mat"></span></div>
+            <p class="m-text">بدون جلوه‌های پیچیده؛ فقط ساختار و فضای خالی دیده می‌شود.</p>
+          </div>
+          <div class="m-card">
+            <div class="m-label"><span>نوشتار</span><span class="m-num">۰۲</span></div>
+            <div class="m-demo"><span class="m-spec">آا بپ</span></div>
+            <p class="m-text">یک خانوادهٔ تایپ؛ وزن سبک و یک اندازه، بدون تزئین.</p>
+          </div>
+          <div class="m-card">
+            <div class="m-label"><span>حرکت</span><span class="m-num">۰۳</span></div>
+            <div class="m-demo"><span class="dots"><i></i><i></i><i></i></span></div>
+            <p class="m-text">کم و آهسته؛ تغییرها با محو و جابه‌جایی کوتاه رخ می‌دهند.</p>
+          </div>
+        </div>
+      </div>
+      <div class="era-block" data-for="2">
+        <div class="m-head">
+          <p class="m-kicker">حالت جسور (بروتالیسم)</p>
+          <h3 class="m-thesis">ساختار را پنهان نمی‌کنیم.</h3>
+        </div>
+        <div class="m-cards">
+          <div class="m-card">
+            <div class="m-label"><span>ماده</span><span class="m-num">۰۱</span></div>
+            <div class="m-demo"><span class="mat"></span></div>
+            <p class="m-text">رنگ تخت، مرز ضخیم و سایهٔ سختِ بدون محو.</p>
+          </div>
+          <div class="m-card">
+            <div class="m-label"><span>نوشتار</span><span class="m-num">۰۲</span></div>
+            <div class="m-demo"><span class="m-spec">آا بپ</span></div>
+            <p class="m-text">تایپ درشت و بی‌پرده؛ حروف مثل بلوک چاپی می‌نشینند.</p>
+          </div>
+          <div class="m-card">
+            <div class="m-label"><span>حرکت</span><span class="m-num">۰۳</span></div>
+            <div class="m-demo"><span class="dots"><i></i><i></i><i></i></span></div>
+            <p class="m-text">ضربه‌های سریع و خشک؛ بدون نرمی و بدون کشسانی.</p>
+          </div>
+        </div>
+      </div>
+      <div class="era-block" data-for="3">
+        <div class="m-head">
+          <p class="m-kicker">حالت گرم (اسکیومورفیسم)</p>
+          <h3 class="m-thesis">هر عنصر از چیزی ساخته شده است.</h3>
+        </div>
+        <div class="m-cards">
+          <div class="m-card">
+            <div class="m-label"><span>ماده</span><span class="m-num">۰۱</span></div>
+            <div class="m-demo"><span class="mat"></span></div>
+            <p class="m-text">کاغذ، فلز و چرم؛ بافت و نور، جنس سطح را می‌گویند.</p>
+          </div>
+          <div class="m-card">
+            <div class="m-label"><span>نوشتار</span><span class="m-num">۰۲</span></div>
+            <div class="m-demo"><span class="m-spec">آا بپ</span></div>
+            <p class="m-text">تایپ با حس حکاکی؛ سایهٔ نرم حروف را از سطح جدا می‌کند.</p>
+          </div>
+          <div class="m-card">
+            <div class="m-label"><span>حرکت</span><span class="m-num">۰۳</span></div>
+            <div class="m-demo"><span class="dots"><i></i><i></i><i></i></span></div>
+            <p class="m-text">فشار و رهاسازی؛ عناصر مثل شیء فیزیکی فرو می‌روند.</p>
+          </div>
+        </div>
+      </div>
+      <div class="era-block" data-for="4">
+        <div class="m-head">
+          <p class="m-kicker">حالت لوکس (گلس‌مورفیسم)</p>
+          <h3 class="m-thesis">عمق از نور ساخته می‌شود.</h3>
+        </div>
+        <div class="m-cards">
+          <div class="m-card">
+            <div class="m-label"><span>ماده</span><span class="m-num">۰۱</span></div>
+            <div class="m-demo"><span class="mat"></span></div>
+            <p class="m-text">شیشهٔ مات با بلور؛ لبهٔ روشن و سایهٔ رنگی.</p>
+          </div>
+          <div class="m-card">
+            <div class="m-label"><span>نوشتار</span><span class="m-num">۰۲</span></div>
+            <div class="m-demo"><span class="m-spec">آا بپ</span></div>
+            <p class="m-text">تایپ سبک و شفاف؛ وزن کم و فضای تنفس زیاد.</p>
+          </div>
+          <div class="m-card">
+            <div class="m-label"><span>حرکت</span><span class="m-num">۰۳</span></div>
+            <div class="m-demo"><span class="dots"><i></i><i></i><i></i></span></div>
+            <p class="m-text">شناوری نرم؛ لایه‌ها آرام بالا می‌آیند و محو می‌شوند.</p>
+          </div>
+        </div>
+      </div>
+      <div class="era-block" data-for="5">
+        <div class="m-head">
+          <p class="m-kicker">حالت شب (رتروویو)</p>
+          <h3 class="m-thesis">یک شب پرنور.</h3>
+        </div>
+        <div class="m-cards">
+          <div class="m-card">
+            <div class="m-label"><span>ماده</span><span class="m-num">۰۱</span></div>
+            <div class="m-demo"><span class="mat"></span></div>
+            <p class="m-text">نئون، کروم و افق شبکه‌ای؛ درخشش روی سیاهی.</p>
+          </div>
+          <div class="m-card">
+            <div class="m-label"><span>نوشتار</span><span class="m-num">۰۲</span></div>
+            <div class="m-demo"><span class="m-spec">آا بپ</span></div>
+            <p class="m-text">تایپ کرومی و مونواسپیس؛ حروف مثل تیتر کاست.</p>
+          </div>
+          <div class="m-card">
+            <div class="m-label"><span>حرکت</span><span class="m-num">۰۳</span></div>
+            <div class="m-demo"><span class="dots"><i></i><i></i><i></i></span></div>
+            <p class="m-text">درخشش پیاپی و اسکن خطی؛ حرکت مثل سیگنال.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fit" id="fit" aria-labelledby="fit-label" data-placeholder="true">
+    <div class="wrap">
+      <div class="fit-head">
+        <h2 class="fit-eyebrow" id="fit-label">چرا این سبک؟</h2>
+        <button class="fit-next" type="button" id="fit-next">سبک بعدی <span class="fit-arrow" aria-hidden="true">←</span></button>
+      </div>
+      <div class="fit-block" data-for="1">
+        <p class="fit-claim">اگر محصولت باید در سه ثانیه فهمیده شود، این سبک بهترین راهکار است.</p>
+        <p class="fit-body">در فرم ثبت‌نام یا صفحه پرداخت، هر عنصر اضافه یک تصمیم است که کاربر باید بگیرد؛ حذفشان سرعت رسیدن به دکمه را بالا می‌برد  اما اگر در جای اشتباه پیاده‌سازی شود، توجه کاربر به راحتی از دست میرود.</p>
+      </div>
+      <div class="fit-block" data-for="2">
+        <p class="fit-claim">اگر محصولت باید دیده شود، این سبک اجازه نمی‌دهد از کنارش رد شوند.</p>
+        <p class="fit-body">برای فروشگاهی که رقیبش پر سر و صداست، دیده شدن قبل از زیبا بودن مهم است. اما در پنلی که کاربر ساعت‌ها با آن کار می‌کند، همین صدا خسته‌کننده می‌شود.</p>
+      </div>
+      <div class="fit-block" data-for="3">
+        <p class="fit-claim">اگر کاربر باید بدون آموزش بفهمد کجا را فشار دهد، این سبک کار می‌کند.</p>
+        <p class="fit-body">دکمه‌ای که فرو می‌رود، به کاربر می‌گوید این شیء واقعی است؛ در اپلیکیشن بانکی یا پنل فروشنده، همین آشنایی اعتماد می‌سازد. اما روی نمایشگر ارزان و در حجم زیاد، بافت به نویز تبدیل می‌شود.</p>
+      </div>
+      <div class="fit-block" data-for="4">
+        <p class="fit-claim">اگر می‌خواهی محصولت گران‌بها حس شود، این سبک بهترین انتخاب است</p>
+        <p class="fit-body">برای کاتالوگ محصول یا داشبوردی که باید سبک و امروزی دیده شود، لایه‌های شفاف حس لوکس بودن را القی میکنند. اما  افکت‌های این سبک میتواند سنگین باشد و تجربه‌کاربری را برای مشتریانی که سخت‌افزار یا اینترنت ضعیفی دارند خراب کند.</p>
+      </div>
+      <div class="fit-block" data-for="5">
+        <p class="fit-claim">اگر محصولت باید حس یک شب خاص را بدهد، این سبک آن را می‌سازد.</p>
+        <p class="fit-body">نماینده زندگی شب و نورهای نئون، خاص و مناسب برای محصولاتی که با شب پیوند خورده‌اند. اما این سبک با دو ساعت کار روزانه کنار نمی‌آید؛ مناسب لحظه است، نه محیط کاری.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="wrap">
+      <div>
+        <h2>درباره ما</h2>
+        <p>هدف ما ساخت وب‌سایت‌هایی است که هم جذاب باشند و هم بهینه؛ تا روی هر دستگاهی، حتی با محدودیت سخت‌افزاری، روان کار کنند. برای همین هر پروژه را با طراحی اختصاصی و روش‌های بهینه‌سازی کارآمد می‌سازیم.</p>
+      </div>
+      <div class="stack">
+        <div class="ltr">Next.js · React · TypeScript</div>
+        <div class="ltr">Node.js · Express · PostgreSQL</div>
+        <div class="ltr">Docker · CI/CD</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="band">
+        <div><h2>پروژه‌ای در ذهن دارید؟</h2><p>برای گفت‌وگو درباره پروژه، همکاری یا مشاوره پیام بدهید.</p></div>
+        <div class="contact-actions">
+          <a class="ltr link" href="mailto:satoteam.ir@gmail.com">satoteam.ir@gmail.com</a>
+          <a class="ltr link" href="https://t.me/satoteam">@satoteam</a>
+          <a class="cta" href="mailto:satoteam.ir@gmail.com">شروع گفت‌وگو</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <b class="fbrand">satoteam</b>
+        <span class="fyear">© 2026</span>
+      </div>
+      <div>
+        <h3>تماس</h3>
+        <a class="ltr link" href="mailto:satoteam.ir@gmail.com">satoteam.ir@gmail.com</a>
+        <a class="ltr link" href="https://t.me/satoteam">@satoteam</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="era-fade" id="eraFade" aria-hidden="true"></div>
+<p class="sr-only" aria-live="polite" id="live"></p>
+</body></html>
